@@ -40,6 +40,10 @@ gem 'spring',        group: :development
 
 gem 'bundler'
 
+gem 'omniauth-github'
+gem 'websocket'
+gem 'react-rails'
+
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
 gem 'devise', github: 'plataformatec/devise'
