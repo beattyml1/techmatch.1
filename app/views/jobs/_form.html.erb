@@ -1,0 +1,57 @@
+<%= form_for(@job) do |f| %>
+  <% if @job.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h2>
+
+      <ul>
+      <% @job.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :hook %><br>
+    <%= f.text_field :hook %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br>
+    <%= f.text_field :company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :must_haves %><br>
+    <%= f.text_field :must_haves %>
+  </div>
+  <div class="field">
+    <%= f.label :love_to_haves %><br>
+    <%= f.text_field :love_to_haves %>
+  </div>
+  <div class="field">
+    <%= f.label :nice_to_haves %><br>
+    <%= f.text_field :nice_to_haves %>
+  </div>
+  <div class="field">
+    <%= f.label :max_salary %><br>
+    <%= f.text_field :max_salary %>
+  </div>
+  <div class="field">
+    <%= f.label :min_years_experience %><br>
+    <%= f.number_field :min_years_experience %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @job.title %>
+</p>
+
+<p>
+  <strong>Hook:</strong>
+  <%= @job.hook %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @job.description %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @job.company %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @job.user %>
+</p>
+
+<p>
+  <strong>Must haves:</strong>
+  <%= @job.must_haves %>
+</p>
+
+<p>
+  <strong>Love to haves:</strong>
+  <%= @job.love_to_haves %>
+</p>
+
+<p>
+  <strong>Nice to haves:</strong>
+  <%= @job.nice_to_haves %>
+</p>
+
+<p>
+  <strong>Max salary:</strong>
+  <%= @job.max_salary %>
+</p>
+
+<p>
+  <strong>Min years experience:</strong>
+  <%= @job.min_years_experience %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

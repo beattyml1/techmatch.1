@@ -1,0 +1,2 @@
+json.extract! job, :id, :title, :hook, :description, :company_id, :user_id, :must_haves, :love_to_haves, :nice_to_haves, :max_salary, :min_years_experience, :created_at, :updated_at
+json.url job_url(job, format: :json)

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :jobs
+
   resources :message_threads
 
   resources :messages
